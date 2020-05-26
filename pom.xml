@@ -51,7 +51,7 @@
 			<version>8.0.18</version>
 		</dependency>
 
-		<!-- alibaba的druid数据库连接池 -->
+		<!-- alibaba druid database connection pool -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
