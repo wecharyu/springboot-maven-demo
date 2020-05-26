@@ -1,0 +1,57 @@
+{
+    // List of folders to be loaded in the workspace.
+    "folders": [
+        {
+            // Project root
+            // "name": "webDemo",
+            "path": "."
+        },
+        {
+            // Source code
+            "name": "sources",
+            // "path": "src/main/java"
+             "path": "src/main/"
+        },
+        {
+            // Test code
+            "name": "test",
+            // "path": "src/main/java"
+             "path": "src/test/"
+        },
+    ],
+
+    // Workspace launch configurations.
+    "launch": {
+        "configurations": [
+            {
+                "type": "java",
+                "name": "Debug java",
+                "request": "launch",
+                // Debugger will resolve all main classes in current workspace with empty `mainClass` field.
+                "mainClass": ""
+            },
+            {
+                "type": "java",
+                "name": "Debug web",
+                "request": "attach",
+                "hostName": "localhost",
+                "port": 9090,
+            }
+        ],
+        "compounds": [],
+    },
+
+    // Workspace settings.
+    "settings": {
+        // general settings
+        "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
+        "terminal.integrated.shell.linux": "/bin/zsh",
+        "workbench.editor.labelFormat": "medium",
+
+        // java related
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "java.home": "/opt/jdk-14.0.1",
+        // "java.home": "D:\\Program Files\\Java\\jdk1.8.0_151",
+        "java.debug.settings.console": "externalTerminal"
+    }
+}
